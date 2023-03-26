@@ -1,0 +1,6 @@
+@for $i from 1 through 5 {
+    .block-#{$i} {
+        padding-top: calc(0.375rem * $i)!important;
+        padding-bottom: calc(0.375rem * $i)!important;
+    }
+}

@@ -1,4 +1,4 @@
-.row {
+.row-grid {
     display: grid;
     // grid-template-columns: repeat(12, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
@@ -10,8 +10,38 @@
         @for $i from 1 through 12 {
             &.size-#{$i} {
                 grid-column: span #{$i};
-                background-color: hsl(50 100% - ($i * 5) 50%);
             }
+        }
+    }
+}
+
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+
+    padding: 0.25rem 0.5rem;
+
+    .col-auto {
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+        border: 1px black solid;
+    }
+
+    @for $i from 1 through 12 {
+
+        $calc: calc(100 / 12) * $i;
+
+        .col-#{$i} {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+
+            flex: 0 0 #{$calc + '%'};
+            max-width: #{$calc + '%'};
         }
     }
 }

@@ -1,6 +1,33 @@
+// .container {
+//     flex-grow: 1;
+//     background-color: #555;
+//     // overflow-y: auto;
+//     height: 100%;
+// }
+@use "../utils";
+
 .container {
-    flex-grow: 1;
-    background-color: #555;
-    // overflow-y: auto;
-    height: 100%;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    background-color: bisque;
+
+    @include utils.mq("sm") {
+        max-width: 540px;
+    }
+
+    @include utils.mq("md") {
+        max-width: 720px;
+    }
+
+    @include utils.mq("lg") {
+        max-width: 960px;
+    }
+
+    @include utils.mq("xl") {
+        max-width: 1140px;
+    }
 }

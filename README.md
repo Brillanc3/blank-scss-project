@@ -6,6 +6,8 @@ Projet vierge en SCSS pour du mobile-first avec des classes par défaut tel que
 - row & size-{1-12} *(pour une grid sur 12 cases)*
 - mixins
 
+![CSS Valide](http://jigsaw.w3.org/css-validator/images/vcss)
+
 ## Table des matières
 
 - [Pour commencer](#pour-commencer)

@@ -4,6 +4,11 @@
     align-items: center;
 }
 
+@mixin row-flew {
+    display: flex;
+    flex-direction: row;
+}
+
 @mixin margin-center($important: false, $top:0, $bot:0) {
     margin-left: auto#{if($important, '!important', '')};
     margin-right: auto#{if($important, '!important', '')};
