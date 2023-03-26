@@ -64,6 +64,10 @@ Paramètres :
     // Rien pour le moment
 ```
 
+## Facultatifs
+
+Comprendres les commandes GIT sur VSCode.
+
 ## Auteurs
 
 - Brillance - *Travail initial*
