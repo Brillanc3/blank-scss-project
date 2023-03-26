@@ -1,0 +1,17 @@
+.row {
+    display: grid;
+    // grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+
+    .column {
+        padding: 12px;
+        border: solid 1px #333;
+
+        @for $i from 1 through 12 {
+            &.size-#{$i} {
+                grid-column: span #{$i};
+                background-color: hsl(50 100% - ($i * 5) 50%);
+            }
+        }
+    }
+}

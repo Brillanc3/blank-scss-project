@@ -1,0 +1,50 @@
+footer {
+	background-color: #333;
+	height: auto;
+	width: 100%;
+	padding-top: 40px;
+	color: #fff;
+
+	#{'.' + & + '__content'} {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	#{'.' + & + '__socials'} {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 1rem 0 3rem 0;
+		flex-wrap: wrap;
+
+		li {
+			margin: 0 10px;
+
+			a {
+				text-decoration: none;
+				color: #fff;
+
+				:hover {
+					color: rgb(81, 128, 190);
+				}
+
+				i {
+					font-size: 1.1rem;
+					transition: color .4s ease;
+				}
+			}
+		}
+	}
+
+	// #{'.' + & + '__socials'} {
+
+	// }
+}
+
+// div.up-link > a ~ a::before, div.down-link > a ~ a::before {
+// 	content: variables.$separator;
+// }

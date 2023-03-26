@@ -1,0 +1,238 @@
+/**
+ * Apply box-sizing so that padding and border are included in element's total width and height.
+ * This avoids calculation errors that can cause unexpected layouts.
+ */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+   * Remove margin and padding from all elements to ensure consistent spacing.
+   */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+   * Ensure that lists are rendered in a consistent manner.
+   */
+ol,
+ul {
+  list-style: none;
+}
+
+/**
+   * Remove the default styles for anchor elements.
+   */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+   * Remove the default border on images that are wrapped in an anchor element.
+   */
+img {
+  border-style: none;
+  vertical-align: middle;
+}
+
+/**
+   * Remove any extra whitespace between the top of the content area and the top of the viewport.
+   */
+html {
+  scroll-padding-top: env(safe-area-inset-top);
+}
+
+body {
+  margin-top: env(safe-area-inset-top);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  flex-grow: 1;
+  background-color: #555;
+  height: 100%;
+}
+
+footer {
+  background-color: #333;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  color: #fff;
+}
+footer .footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+footer .footer__socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+  flex-wrap: wrap;
+}
+footer .footer__socials li {
+  margin: 0 10px;
+}
+footer .footer__socials li a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .footer__socials li a :hover {
+  color: rgb(81, 128, 190);
+}
+footer .footer__socials li a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+}
+.row .column {
+  padding: 12px;
+  border: solid 1px #333;
+}
+.row .column.size-1 {
+  grid-column: span 1;
+  background-color: hsl(50, 95%, 50%);
+}
+.row .column.size-2 {
+  grid-column: span 2;
+  background-color: hsl(50, 90%, 50%);
+}
+.row .column.size-3 {
+  grid-column: span 3;
+  background-color: hsl(50, 85%, 50%);
+}
+.row .column.size-4 {
+  grid-column: span 4;
+  background-color: hsl(50, 80%, 50%);
+}
+.row .column.size-5 {
+  grid-column: span 5;
+  background-color: hsl(50, 75%, 50%);
+}
+.row .column.size-6 {
+  grid-column: span 6;
+  background-color: hsl(50, 70%, 50%);
+}
+.row .column.size-7 {
+  grid-column: span 7;
+  background-color: hsl(50, 65%, 50%);
+}
+.row .column.size-8 {
+  grid-column: span 8;
+  background-color: hsl(50, 60%, 50%);
+}
+.row .column.size-9 {
+  grid-column: span 9;
+  background-color: hsl(50, 55%, 50%);
+}
+.row .column.size-10 {
+  grid-column: span 10;
+  background-color: hsl(50, 50%, 50%);
+}
+.row .column.size-11 {
+  grid-column: span 11;
+  background-color: hsl(50, 45%, 50%);
+}
+.row .column.size-12 {
+  grid-column: span 12;
+  background-color: hsl(50, 40%, 50%);
+}
+
+header {
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.home {
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}

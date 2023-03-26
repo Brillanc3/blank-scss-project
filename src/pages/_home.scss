@@ -1,0 +1,26 @@
+// main {
+    // background-color: #0964ec;
+    // @include media-tablette {
+    //     background-color: #0246ac;
+    // }
+
+    // @include media-desktops {
+    //     background-color: #d1d1d1;
+    // }
+
+    // @include media-large-desktops {
+    //     background-color: #b3b3b3;
+    // }
+
+    // @include media-extra-large-desktop {
+    //     background-color: #ffffff;
+    // }
+// }
+@use "../utils";
+
+.home {
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    @include utils.margin-center();
+}
