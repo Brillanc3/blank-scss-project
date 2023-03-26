@@ -64,9 +64,13 @@ Paramètres :
     // Rien pour le moment
 ```
 
-## Facultatifs
+## Contribuer
 
-Comprendres les commandes GIT sur VSCode.
+1. Forker le projet
+2. Créer une nouvelle branche (`git checkout -b feature/nom-de-la-branche`)
+3. Faire les changements nécessaires et les commit (`git commit -am 'Ajouter une fonctionnalité'`)
+4. Pousser les changements sur la branche (`git push origin feature/nom-de-la-branche`)
+5. Ouvrir une Pull Request
 
 ## Auteurs
 
