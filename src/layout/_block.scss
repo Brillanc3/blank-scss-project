@@ -1,6 +1,11 @@
+@use "sass:math";
+
 @for $i from 1 through 5 {
     .block-#{$i} {
-        padding-top: calc(0.375rem * $i)!important;
-        padding-bottom: calc(0.375rem * $i)!important;
+
+        $padding: 0.375rem * math.pow(2, $i - 1);
+
+        padding-top: $padding !important;
+        padding-bottom: $padding !important;
     }
 }

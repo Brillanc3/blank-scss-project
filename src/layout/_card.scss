@@ -1,0 +1,15 @@
+@use "../utils";
+
+.card {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    .card-img {
+        padding: 16px;
+        width: 100%;
+    }
+
+    @include utils.mq("sm") {
+        max-width: 325px;
+        width: 29%;
+    }
+}
